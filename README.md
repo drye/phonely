@@ -28,10 +28,9 @@ To install Virtualbox it's recommended that you download the latest version dire
 
 Download and install [the appropriate Vagrant package for your OS](http://downloads.vagrantup.com).
 
-In your terminal run the following to install two required plugins in Vagrant:
+In your terminal run the following to install Berkshelf in Vagrant:
 
 ```bash
-vagrant plugin install multi_json
 vagrant plugin install berkshelf-vagrant
 ```
 
