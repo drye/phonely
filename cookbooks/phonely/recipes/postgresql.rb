@@ -28,6 +28,6 @@ end
 
 # Creates the UUID-OSSP extension
 execute "create-uuid-ossp-extension" do
-    user "postgres"
-    command 'psql -U postgres -c "CREATE EXTENSION IF NOT EXISTS \"uuid-ossp\""'
+    user node['phonely'][:dbuser]
+    command 'psql -U phonely -c "CREATE EXTENSION IF NOT EXISTS \"uuid-ossp\""'
 end
