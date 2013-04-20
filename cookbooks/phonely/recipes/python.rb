@@ -21,7 +21,7 @@ python_virtualenv node["phonely"][:virtualenv] do
 end
 
 # Install a few pip packages in the virtual environment
-['sqlalchemy', 'fixtures', 'nose'].each do |pip_package|
+['sqlalchemy', 'fixtures', 'nose', 'psycopg2'].each do |pip_package|
     python_pip pip_package do
         virtualenv node["phonely"][:virtualenv]
         action :install
