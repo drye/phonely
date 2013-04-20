@@ -7,7 +7,7 @@ Requirements
 =============
 
 * Build essentials on Linux and brew on OS X
-* Virtual box
+* Virtual box with an Ubuntu basebox with a more recent Chef (included)
 * Vagrant with Berkshelf plugin
 * Git
 
